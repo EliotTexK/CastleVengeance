@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="CastleVengeance">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LevelWriter.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ver3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ver2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ver1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ver4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
