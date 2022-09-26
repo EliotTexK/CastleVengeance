@@ -53,7 +53,7 @@ class Window extends JFrame implements MouseListener, ActionListener{
     private void init()
     {
         kind = 0;
-        numOfTiles = new File("resources\\images\\tiles").listFiles().length;
+        numOfTiles = new File("resources/images/tiles").listFiles().length;
         System.out.println("number of tile types: " + numOfTiles);
 
         setBounds(0,0,Constants.SCREEN_WIDTH,Constants.SCREEN_HEIGHT+32);
@@ -223,19 +223,19 @@ class Window extends JFrame implements MouseListener, ActionListener{
             setBounds(0,0,Constants.SCREEN_WIDTH,Constants.SCREEN_HEIGHT);
 
             //loads all the resources
-            String[] s = new File("resources\\images\\tiles").list();
+            String[] s = new File("resources/images/tiles").list();
             tileImages = new Image[s.length];
             for (int i = 1; i < tileImages.length; i++) {
-                tileImages[i] = new ImageIcon("resources\\images\\tiles\\" + s[i]).getImage();
+                tileImages[i] = new ImageIcon("resources/images/tiles/" + s[i]).getImage();
             }
 
-            s = new File("resources\\images\\sprites").list();
+            s = new File("resources/images/sprites").list();
             spriteImages = new Image[s.length];
             for (int i = 0; i < spriteImages.length; i++) {
-                spriteImages[i] = new ImageIcon("resources\\images\\sprites\\" + s[i]).getImage();
+                spriteImages[i] = new ImageIcon("resources/images/sprites/" + s[i]).getImage();
             }
 
-            background = new ImageIcon("resources\\images\\backgrounds\\background1.png").getImage();
+            background = new ImageIcon("resources/images/backgrounds/background1.png").getImage();
 
         }
 

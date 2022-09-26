@@ -30,10 +30,10 @@ class GameManager
         //adds a screen to draw the game and detect
         //keyboard events
         screen = new GameDraw();
-        level = new LevelManager("resources\\levels\\TestLevel",(byte) 0);
+        level = new LevelManager("resources/levels/TestLevel",(byte) 0);
         sound = new SoundPlayer();
         music = new MusicPlayer();
-        music.play("resources\\sounds\\Music1.wav");
+        music.play("resources/sounds/Music1.wav");
     }
 
     void loop()
@@ -258,7 +258,7 @@ class GameManager
             key2 = 0;
             //customizes the window
             setBounds(0, 0, Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT);
-            setIconImage(new ImageIcon("resources\\images\\00_Icon.png").getImage());
+            setIconImage(new ImageIcon("resources/images/00_Icon.png").getImage());
             setBackground(Color.black);
             setResizable(false);
             setVisible(true);
@@ -336,19 +336,19 @@ class GameManager
                 setBounds(0,0,Constants.SCREEN_WIDTH,Constants.SCREEN_HEIGHT);
 
                 //loads all the resources
-                String[] s = new File("resources\\images\\tiles").list();
+                String[] s = new File("resources/images/tiles").list();
                 tileImages = new Image[s.length];
                 for (int i = 0; i < tileImages.length; i++) {
-                    tileImages[i] = new ImageIcon("resources\\images\\tiles\\" + s[i]).getImage();
+                    tileImages[i] = new ImageIcon("resources/images/tiles/" + s[i]).getImage();
                 }
 
-                s = new File("resources\\images\\sprites").list();
+                s = new File("resources/images/sprites").list();
                 spriteImages = new Image[s.length];
                 for (int i = 0; i < spriteImages.length; i++) {
-                    spriteImages[i] = new ImageIcon("resources\\images\\sprites\\" + s[i]).getImage();
+                    spriteImages[i] = new ImageIcon("resources/images/sprites/" + s[i]).getImage();
                 }
 
-                background = new ImageIcon("resources\\images\\backgrounds\\background1.png").getImage();
+                background = new ImageIcon("resources/images/backgrounds/background1.png").getImage();
 
             }
 
